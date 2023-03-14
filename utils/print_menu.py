@@ -1,5 +1,3 @@
-from utils.data_manipulation import listar_palavras
-
 def linha():
     print("-"*40)
 
@@ -9,6 +7,7 @@ def menu_principal():
     print("1- Adicionar nova palavra")
     print("2- Listar todas as palavras")
     print("3- Começar Teste")
+    print("4- Encerrar Programa")
 
 
 def menu_listar_palavras():

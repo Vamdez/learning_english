@@ -1,9 +1,11 @@
 
 def listar_palavras():
+    ingles_palavras, traducao_palavras = [], []
     palavras = open("utils/palavras.txt", "rt")
     dados_limpos = palavras.read().split("\n")
-    ingles_palavras, traducao_palavras = separar_listas(dados_limpos)
-    palavras.close()
+    if dados_limpos != [""]:
+        ingles_palavras, traducao_palavras = separar_listas(dados_limpos)
+        palavras.close()
     return ingles_palavras, traducao_palavras
 
 def separar_listas(lista):
